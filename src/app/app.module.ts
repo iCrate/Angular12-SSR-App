@@ -3,19 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RendererModule, TransferHttpCacheModule } from '@nguniversal/common/clover';
+import {
+  RendererModule,
+  TransferHttpCacheModule,
+} from '@nguniversal/common/clover';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'appId' }),
     AppRoutingModule,
     RendererModule.forRoot(),
-    TransferHttpCacheModule
+    TransferHttpCacheModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -10,7 +10,8 @@
     "prerender": "ng run angular12-ssr:prerender",
     "build:client-and-server": "ng build angular12-ssr && ng run angular12-ssr:server",
     "build:server": "ng run angular12-ssr:server",
-    "serve:ssr": "node dist/angular12-ssr/server/main.js"
+    "serve:ssr": "node dist/angular12-ssr/server/main.js",
+    "build:ssr": "ng build && ng run angular12-ssr:server"
   },
   "private": true,
   "dependencies": {
